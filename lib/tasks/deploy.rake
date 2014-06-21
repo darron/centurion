@@ -3,7 +3,7 @@ require 'excon'
 require 'centurion/deploy'
 
 task :deploy do
-  invoke 'deploy:get_image'
+  #invoke 'deploy:get_image'
   invoke 'deploy:stop'
   invoke 'deploy:start_new'
   invoke 'deploy:cleanup'
